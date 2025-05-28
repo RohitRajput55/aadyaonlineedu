@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Portal Navbar</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+     <link rel="icon" type="image/png" href="assests/logo.png">
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+   <div class="fixed top-0 w-full z-50 bg-[#1a365d] text-[#f7fafc]">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center h-10 text-sm">
+            <!-- Contact Info -->
+            <div class="flex items-center space-x-4 md:space-x-6">
+                <!-- Always visible phone number -->
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-phone-alt text-[#48bb78]"></i>
+                    <span class="truncate">7011189760, 9625650882</span>
+                </div>
+                
+                <!-- Hidden on mobile -->
+                <div class="hidden md:flex items-center space-x-2">
+                    <i class="fas fa-phone-alt text-[#48bb78] md:hidden"></i>
+                    <span class="hidden md:inline">Admission Helpline:</span>
+                </div>
+
+                <!-- Email (hidden on mobile) -->
+                <div class="hidden md:flex items-center space-x-2">
+                    <i class="fas fa-envelope text-[#48bb78]"></i>
+                    <span>info@aadhyanonlineeducation.com</span>
+                </div>
+
+                <!-- Timing (hidden on mobile) -->
+                <div class="hidden md:flex items-center space-x-2">
+                    <i class="fas fa-clock text-[#48bb78]"></i>
+                    <span>Mon-Sat: 9AM - 6PM</span>
+                </div>
+            </div>
+
+            <!-- Franchise Button (adjusted for mobile) -->
+            <a href="#" class="bg-gradient-to-r from-[#2b6cb0] to-[#319795] hover:from-[#2c5282] hover:to-[#2a7a6d] text-white px-2 md:px-4 py-1 rounded-full text-xs md:text-sm font-medium transition-all transform hover:scale-105 shadow-sm">
+                <i class="fas fa-handshake mr-1 md:mr-2"></i>
+                <span class="hidden xs:inline">Apply</span>
+                <span class="hidden md:inline">For Franchise</span>
+            </a>
+        </div>
+    </div>
+</div>
+    <nav class="bg-white shadow-lg fixed top-10 w-full z-40">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <img src="assests/logo.png" class="w-[22vw]  md:w-[7vw]" alt="">
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="/index.html" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="/about.html" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-blue-600 focus:outline-none transition">
+                          Counselling Courses <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg py-3 w-[16vw]">
+                            <a href="crsu-bed-programme.html" class="block px-3 py-2 hover:bg-blue-50 text-gray-700">CRSU B.Ed. Programme</a>
+                            <a href="mdu-bed-programme.html" class="block px-3 py-2 hover:bg-blue-50 text-gray-700">MDU B.Ed Programme</a>
+                          
+                        </div>
+                    </div>
+                    
+                    <!-- Courses Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-blue-600 focus:outline-none transition">
+                          Medical Courses <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg py-3 w-48">
+                            <a href="anm-course.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">ANM</a>
+                            <a href="gnm-course.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">GNM</a>
+                            <a href="B.Pharma.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">B.Pharma</a>
+                            <a href="M.pharma.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">M.Pharma</a>
+                        </div>
+                    </div>
+
+                     <div class="relative group">
+                        <button class="text-gray-700 hover:text-blue-600 focus:outline-none transition">
+                          Law Courses <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg py-3 w-48">
+                            <a href="llb-course.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">LLB</a>
+                            <a href="llm-course.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">LLM</a>
+                            <a href="ba-llb-course.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">BA - LLB</a>
+                           
+                        </div>
+                    </div>
+
+                     <div class="relative group">
+                        <button class="text-gray-700 hover:text-blue-600 focus:outline-none transition">
+                          Universities <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg py-3 w-64">
+                            <a href="shubharti-university-detail.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">Shubharti University</a>
+                            <a href="suresh-gyan-vihar-university.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">Suresh Gyan Vihar University</a>
+                            <a href="maharaja-agrasen-himalyan-university.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">Maharaja Agrasen Himalayan Garhwal University</a>
+                            <a href="js-university-detail.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">JS University</a>
+                        </div>
+                    </div>
+
+                      <a href="/contact.html" class="text-gray-700 hover:text-blue-600 transition">Contact Us</a>
+                    <!-- More Dropdown -->
+                   
+                </div>
+
+                <!-- Contact Button -->
+                <!-- Original Button -->
+<button onclick="openModal()" class="hidden md:block bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">
+    Get Started
+</button>
+
+<!-- Popup Form -->
+<div id="modal" class="hidden fixed inset-0 z-50 overflow-y-auto">
+    <div class="fixed inset-0 bg-black/30 backdrop-blur-sm" onclick="closeModal()"></div>
+    
+    <div class="flex min-h-screen items-center mt-[1.5vw] justify-center p-4">
+        <div class="relative w-full max-w-md bg-white/90 backdrop-blur-lg rounded-2xl p-8 shadow-xl">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+                ✕
+            </button>
+            
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Get Started</h2>
+            
+            <form class="space-y-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-600 mb-1">Full Name</label>
+                    <input type="text" 
+                           class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium text-gray-600 mb-1">Email</label>
+                    <input type="email" 
+                           class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium text-gray-600 mb-1">Phone</label>
+                    <input type="tel" 
+                           class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                </div>
+
+                 <div>
+                    <label class="block text-sm font-medium text-gray-600 mb-1">Message</label>
+                    <textarea rows="3"
+                           class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+                           placeholder="Share your thoughts or questions..."
+                           ></textarea>
+                </div>
+                
+                <button type="submit" 
+                        class="w-full bg-blue-600 text-white py-2.5 rounded-lg hover:bg-blue-700 transition">
+                    Submit Application
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openModal() {
+        document.getElementById('modal').classList.remove('hidden');
+    }
+    
+    function closeModal() {
+        document.getElementById('modal').classList.add('hidden');
+    }
+</script>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t overflow-y-auto">
+            <div class="px-4 py-5 space-y-4">
+                <a href="/index.html" class="block text-gray-700 hover:text-blue-600">Home</a>
+                <a href="/about.html" class="block text-gray-700 hover:text-blue-600">About</a>
+                
+                <div class="relative">
+                    <button onclick="toggleDropdown('courses')" class="flex justify-between items-center w-full text-gray-700">
+                        Counselling Courses <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div id="courses-dropdown" class="hidden pl-4 mt-2 space-y-2">
+                        <a href="/crsu-bed-programme.html" class="block text-gray-700 hover:text-blue-600">CRSU B.Ed. Programme</a>
+                        <a href="/mdu-bed-programme.html" class="block text-gray-700 hover:text-blue-600">MDU B.Ed Programme</a>
+                       
+                    </div>
+                </div>
+                
+                <!-- Courses Accordion -->
+                <div class="relative">
+                    <button onclick="toggleDropdown('courses')" class="flex justify-between items-center w-full text-gray-700">
+                        Medical Courses <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div id="courses-dropdown" class="hidden pl-4 mt-2 space-y-2">
+                        <a href="/anm-course.html" class="block text-gray-700 hover:text-blue-600">ANM</a>
+                        <a href="/gnm-course.html" class="block text-gray-700 hover:text-blue-600">GNM</a>
+                        <a href="B.Pharma.html" class="block text-gray-700 hover:text-blue-600">B.Pharma</a>
+                        <a href="M.pharma.html" class="block text-gray-700 hover:text-blue-600">M.Pharma</a>
+                    </div>
+                </div>
+
+                 <div class="relative">
+                    <button onclick="toggleDropdown('courses')" class="flex justify-between items-center w-full text-gray-700">
+                        Law Courses <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div id="courses-dropdown" class="hidden pl-4 mt-2 space-y-2">
+                        <a href="/llb-course.html" class="block text-gray-700 hover:text-blue-600">LLB</a>
+                        <a href="/llm-course.html" class="block text-gray-700 hover:text-blue-600">LLM</a>
+                        <a href="/ba-llb-course.html" class="block text-gray-700 hover:text-blue-600">BA - LLB</a>
+         
+                    </div>
+                </div>
+                
+                <!-- More Accordion -->
+                <div class="relative">
+                    <button onclick="toggleDropdown('more')" class="flex justify-between items-center w-full text-gray-700">
+                        Universities <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div id="more-dropdown" class="hidden pl-4 mt-2 space-y-2">
+                        <a href="/shubharti-university-detail.html" class="block text-gray-700 hover:text-blue-600">Shubharti University</a>
+                        <a href="/suresh-gyan-vihar-university.html" class="block text-gray-700 hover:text-blue-600">Suresh Gyan Vihar University</a>
+                        <a href="/maharaja-agrasen-himalyan-university.html" class="block text-gray-700 hover:text-blue-600">Maharaja Agrasen Himalayan Garhwal University</a>
+                        <a href="/js-university-detail.html" class="block text-gray-700 hover:text-blue-600">JS University</a>
+                    </div>
+                </div>
+
+                <a href="/contact.html" class="w-full bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Mobile Dropdown Toggle
+        function toggleDropdown(type) {
+            const dropdown = document.getElementById(`${type}-dropdown`);
+            dropdown.classList.toggle('hidden');
+            
+            // Rotate chevron icon
+            const button = dropdown.previousElementSibling;
+            button.querySelector('i').classList.toggle('rotate-180');
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !mobileMenuButton.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^=""]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+   
+    
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r mt-[8%] from-[#1a365d] to-[#2b6cb0] text-white py-24">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-2/3">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6">Suresh Gyan Vihar University</h1>
+                    <p class="text-xl md:text-2xl mb-8">NAAC A+ Accredited | UGC Recognized | Estd. 1999</p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="bg-white/10 p-4 rounded-lg">
+                            <p class="text-sm">QS Ranking</p>
+                            <p class="font-bold">Top 150 in Asia</p>
+                        </div>
+                        <div class="bg-white/10 p-4 rounded-lg">
+                            <p class="text-sm">Placements</p>
+                            <p class="font-bold">₹1.2 CR Highest Package</p>
+                        </div>
+                        <div class="bg-white/10 p-4 rounded-lg">
+                            <p class="text-sm">Students</p>
+                            <p class="font-bold">25,000+ Alumni</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/3">
+                    <img src="https://img.freepik.com/free-photo/low-rise-building_1127-3268.jpg?ga=GA1.1.1966161202.1734948006&semt=ais_hybrid&w=740" 
+                         alt="SGVU Campus" 
+                         class="rounded-2xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- University Highlights -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-[#1a365d] mb-12 text-center">Why Choose SGVU?</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 border-l-4 border-[#d4af37]">
+                    <i class="fas fa-atom text-3xl text-[#d4af37] mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Innovative Curriculum</h3>
+                    <p class="text-gray-600">Industry-aligned programs with 30% practical learning component</p>
+                </div>
+                
+                <div class="p-6 border-l-4 border-[#1a365d]">
+                    <i class="fas fa-globe text-3xl text-[#1a365d] mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Global Exposure</h3>
+                    <p class="text-gray-600">150+ international collaborations with semester exchange programs</p>
+                </div>
+                
+                <div class="p-6 border-l-4 border-[#2b6cb0]">
+                    <i class="fas fa-flask text-3xl text-[#2b6cb0] mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Research Focus</h3>
+                    <p class="text-gray-600">₹50Cr+ research funding with 25 patents filed annually</p>
+                </div>
+            </div>
+
+            <div class="mt-12 grid md:grid-cols-2 gap-8">
+                <div class="bg-[#f8fafc] p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold text-[#1a365d] mb-4">Key Infrastructure</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-wifi text-[#d4af37]"></i>
+                            Smart Wi-Fi Enabled Campus
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-microscope text-[#d4af37]"></i>
+                            25 Advanced Research Labs
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-book-open text-[#d4af37]"></i>
+                            1 Million+ Library Resources
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-[#1a365d] text-white p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold mb-4">Video Tour</h3>
+                    <div class="aspect-video bg-gray-700 rounded-xl flex items-center justify-center">
+                        <i class="fas fa-play text-4xl text-[#d4af37]"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rankings & Recognition -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-[#1a365d] mb-12 text-center">Accreditations & Rankings</h2>
+            
+            <div class="grid md:grid-cols-4 gap-6 text-center">
+                <div class="p-6 bg-white rounded-xl">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOJ1e4I0Tnuwq55hzwfxpD7ZVVrUfKeStT_A&s" alt="NAAC A+" class="h-16 mx-auto mb-4">
+                    <p class="font-bold">NAAC A+ Grade</p>
+                    <p class="text-sm">3.28 CGPA</p>
+                </div>
+                
+                <div class="p-6 bg-white rounded-xl">
+                    <img src="data:image/png;base64,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" alt="QS Ranking" class="h-16 mx-auto mb-4">
+                    <p class="font-bold">QS World Rankings</p>
+                    <p class="text-sm">Top 150 in Asia</p>
+                </div>
+                
+                <div class="p-6 bg-white rounded-xl">
+                    <img src="https://www.igdtuw.ac.in/IGDTUW/uploads/1546230513.png" alt="NIRF" class="h-16 mx-auto mb-4">
+                    <p class="font-bold">NIRF 2023</p>
+                    <p class="text-sm">Top 100 in University Category</p>
+                </div>
+                
+                <div class="p-6 bg-white rounded-xl">
+                    <img src="https://aissmsioit.org/wp-content/uploads/2021/10/ARIIA-logo.png" alt="ARIIA" class="h-16 mx-auto mb-4">
+                    <p class="font-bold">ARIIA 2023</p>
+                    <p class="text-sm">Band A University</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Schools -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-[#1a365d] mb-12 text-center">Our Academic Schools</h2>
+            
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="p-6 bg-[#f8fafc] rounded-xl hover:shadow-lg transition-all">
+                    <i class="fas fa-cogs text-3xl text-[#2b6cb0] mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Engineering</h3>
+                    <p class="text-gray-600">16 UG/PG programs with NBA accreditation</p>
+                </div>
+                
+                <div class="p-6 bg-[#f8fafc] rounded-xl hover:shadow-lg transition-all">
+                    <i class="fas fa-chart-line text-3xl text-[#319795] mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Management</h3>
+                    <p class="text-gray-600">AICTE approved MBA with 12 specializations</p>
+                </div>
+                
+                <div class="p-6 bg-[#f8fafc] rounded-xl hover:shadow-lg transition-all">
+                    <i class="fas fa-flask text-3xl text-[#48bb78] mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Sciences</h3>
+                    <p class="text-gray-600">Research-focused programs in emerging areas</p>
+                </div>
+                
+                <div class="p-6 bg-[#f8fafc] rounded-xl hover:shadow-lg transition-all">
+                    <i class="fas fa-gavel text-3xl text-[#d4af37] mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Law</h3>
+                    <p class="text-gray-600">BCI approved programs with moot court facilities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Section -->
+    <section class="py-16 bg-gradient-to-r from-[#1a365d] to-[#2b6cb0] text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Admissions 2024</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="text-2xl font-bold">30+</div>
+                            <div>Undergraduate Programs</div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="text-2xl font-bold">45+</div>
+                            <div>Postgraduate Programs</div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="text-2xl font-bold">100+</div>
+                            <div>Doctoral Scholars</div>
+                        </div>
+                    </div>
+                    <button class="mt-8 bg-white text-[#1a365d] px-8 py-3 rounded-full font-bold hover:bg-gray-100">
+                        Apply Now <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+                <div class="bg-white/10 p-8 rounded-2xl">
+                    <h3 class="text-xl font-bold mb-6">Important Dates</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between border-b pb-2">
+                            <span>Application Deadline</span>
+                            <span class="font-bold">31 July 2024</span>
+                        </div>
+                        <div class="flex justify-between border-b pb-2">
+                            <span>Entrance Test</span>
+                            <span class="font-bold">15-20 Aug 2024</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Session Start</span>
+                            <span class="font-bold">1 Sept 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Placements -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-[#1a365d] mb-12 text-center">Placement Highlights</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="text-center p-6">
+                    <div class="text-4xl font-bold text-[#d4af37] mb-2">₹1.2 CR</div>
+                    <div class="text-gray-600">Highest Package (2023)</div>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-4xl font-bold text-[#1a365d] mb-2">400+</div>
+                    <div class="text-gray-600">Recruiting Companies</div>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-4xl font-bold text-[#2b6cb0] mb-2">92%</div>
+                    <div class="text-gray-600">Placement Rate</div>
+                </div>
+            </div>
+
+           
+        </div>
+    </section>
+
+    <!-- Campus Life -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-[#1a365d] mb-12 text-center">Campus Life</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="relative group">
+                    <img src="https://img.freepik.com/free-photo/young-friends-hostel_52683-121730.jpg?ga=GA1.1.1966161202.1734948006&semt=ais_hybrid&w=740" 
+                         class="rounded-xl h-64 w-full object-cover">
+                    <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="text-white text-xl">Modern Hostels</p>
+                    </div>
+                </div>
+                
+                <div class="relative group">
+                    <img src="https://img.freepik.com/premium-photo/aerial-shot-football-stadium_33745-710.jpg?ga=GA1.1.1966161202.1734948006&semt=ais_hybrid&w=740" 
+                         class="rounded-xl h-64 w-full object-cover">
+                    <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="text-white text-xl">Sports Complex</p>
+                    </div>
+                </div>
+                
+                <div class="relative group">
+                    <img src="https://img.freepik.com/free-photo/realistic-people-celebrating-gudi-padwa_23-2151248515.jpg?ga=GA1.1.1966161202.1734948006&semt=ais_hybrid&w=740" 
+                         class="rounded-xl h-64 w-full object-cover">
+                    <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="text-white text-xl">Cultural Events</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 grid md:grid-cols-4 gap-4 text-center">
+                <div class="p-4 bg-white rounded-xl">
+                    <i class="fas fa-users text-3xl text-[#d4af37] mb-2"></i>
+                    <p class="font-bold">25+ Clubs</p>
+                </div>
+                <div class="p-4 bg-white rounded-xl">
+                    <i class="fas fa-trophy text-3xl text-[#1a365d] mb-2"></i>
+                    <p class="font-bold">Sports Academy</p>
+                </div>
+                <div class="p-4 bg-white rounded-xl">
+                    <i class="fas fa-music text-3xl text-[#2b6cb0] mb-2"></i>
+                    <p class="font-bold">Cultural Fests</p>
+                </div>
+                <div class="p-4 bg-white rounded-xl">
+                    <i class="fas fa-hand-holding-heart text-3xl text-[#6a1b9a] mb-2"></i>
+                    <p class="font-bold">Social Initiatives</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <script>
+        // Add interactive elements if needed
+    </script>
+<footer class="bg-gradient-to-b from-[#1a365d] to-[#0d243f] text-gray-300">
+    <div class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <!-- Company Info -->
+            <div class="space-y-4">
+                <img src="assests/logo.png" alt="Aadhyan Online Education" class="h-[20vw] md:h-[18vh] w-auto mb-4">
+                <p class="text-sm leading-relaxed">
+                    Empowering learners through innovative education solutions since 2010.
+                </p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="text-white hover:text-[#48bb78] transition-colors">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-[#48bb78] transition-colors">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-[#48bb78] transition-colors">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-[#48bb78] transition-colors">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="space-y-3">
+                <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="/index.html" class="hover:text-[#48bb78] transition-colors">Home</a></li>
+                    <li><a href="/about.html" class="hover:text-[#48bb78] transition-colors">About</a></li>
+                    <li><a href="/blog.html" class="hover:text-[#48bb78] transition-colors">Blog</a></li>
+                    <li><a href="/faq.html" class="hover:text-[#48bb78] transition-colors">FAQs</a></li>
+                    <li><a href="/contact.html" class="hover:text-[#48bb78] transition-colors">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Programs -->
+            <div class="space-y-3">
+                <h4 class="text-white font-semibold mb-4">Programs</h4>
+                <ul class="space-y-2">
+                    <li><a href="/anm-course.html" class="hover:text-[#48bb78] transition-colors">ANM</a></li>
+                    <li><a href="/gnm-course.html" class="hover:text-[#48bb78] transition-colors">GNM</a></li>
+                    <li><a href="/B.Pharma.html" class="hover:text-[#48bb78] transition-colors">B. Pharma</a></li>
+                    <li><a href="/M.pharma.html" class="hover:text-[#48bb78] transition-colors">M. Pharma</a></li>
+                    <li><a href="/ba-llb-course.html" class="hover:text-[#48bb78] transition-colors">BA - LLB</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="space-y-4">
+                <h4 class="text-white font-semibold mb-4">Stay Updated</h4>
+                <form class="flex flex-col space-y-3">
+                    <input type="email" 
+                           placeholder="Enter your email" 
+                           class="px-4 py-2 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:border-[#48bb78]">
+                    <button class="bg-[#48bb78] hover:bg-[#38a169] text-white px-4 py-2 rounded-lg transition-colors">
+                        Subscribe
+                    </button>
+                </form>
+                <div class="pt-4 border-t border-white/10">
+                    <p class="text-sm mt-2">
+                        <i class="fas fa-phone-alt mr-2"></i>
+                        <a href="tel:+917011189760" class="hover:text-[#48bb78]">7011189760, 9625650882</a>
+                    </p>
+                    <p class="text-sm mt-2">
+                        <i class="fas fa-envelope mr-2"></i>
+                        <a href="mailto:info@aadhyanonlineeducation.com" class="hover:text-[#48bb78]">info@aadhyanonlineeducation.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-white/10 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <p class="text-sm text-white/70">
+                    © 2025 Aadhyan Online Education. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-sm hover:text-[#48bb78] transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-sm hover:text-[#48bb78] transition-colors">Terms of Service</a>
+                    <a href="#" class="text-sm hover:text-[#48bb78] transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

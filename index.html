@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Portal Navbar</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+     <link rel="icon" type="image/png" href="assests/logo.png">
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+   <div class="fixed top-0 w-full z-50 bg-[#1a365d] text-[#f7fafc]">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center h-10 text-sm">
+            <!-- Contact Info -->
+            <div class="flex items-center space-x-4 md:space-x-6">
+                <!-- Always visible phone number -->
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-phone-alt text-[#48bb78]"></i>
+                    <span class="truncate">7011189760, 9625650882</span>
+                </div>
+                
+                <!-- Hidden on mobile -->
+                <div class="hidden md:flex items-center space-x-2">
+                    <i class="fas fa-phone-alt text-[#48bb78] md:hidden"></i>
+                    <span class="hidden md:inline">Admission Helpline:</span>
+                </div>
+
+                <!-- Email (hidden on mobile) -->
+                <div class="hidden md:flex items-center space-x-2">
+                    <i class="fas fa-envelope text-[#48bb78]"></i>
+                    <span>info@aadhyanonlineeducation.com</span>
+                </div>
+
+                <!-- Timing (hidden on mobile) -->
+                <div class="hidden md:flex items-center space-x-2">
+                    <i class="fas fa-clock text-[#48bb78]"></i>
+                    <span>Mon-Sat: 9AM - 6PM</span>
+                </div>
+            </div>
+
+            <!-- Franchise Button (adjusted for mobile) -->
+            <a href="#" class="bg-gradient-to-r from-[#2b6cb0] to-[#319795] hover:from-[#2c5282] hover:to-[#2a7a6d] text-white px-2 md:px-4 py-1 rounded-full text-xs md:text-sm font-medium transition-all transform hover:scale-105 shadow-sm">
+                <i class="fas fa-handshake mr-1 md:mr-2"></i>
+                <span class="hidden xs:inline">Apply</span>
+                <span class="hidden md:inline">For Franchise</span>
+            </a>
+        </div>
+    </div>
+</div>
+    <nav class="bg-white shadow-lg fixed top-10 w-full z-40">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <img src="https://i.postimg.cc/mr1F3N5B/logo.png" class="w-[22vw]  md:w-[7vw]" alt="">
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="/index.html" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="/about.html" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-blue-600 focus:outline-none transition">
+                          Counselling Courses <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg py-3 w-[16vw]">
+                            <a href="crsu-bed-programme.html" class="block px-3 py-2 hover:bg-blue-50 text-gray-700">CRSU B.Ed. Programme</a>
+                            <a href="mdu-bed-programme.html" class="block px-3 py-2 hover:bg-blue-50 text-gray-700">MDU B.Ed Programme</a>
+                          
+                        </div>
+                    </div>
+                    
+                    <!-- Courses Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-blue-600 focus:outline-none transition">
+                          Medical Courses <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg py-3 w-48">
+                            <a href="anm-course.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">ANM</a>
+                            <a href="gnm-course.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">GNM</a>
+                            <a href="B.Pharma.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">B.Pharma</a>
+                            <a href="M.pharma.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">M.Pharma</a>
+                        </div>
+                    </div>
+
+                     <div class="relative group">
+                        <button class="text-gray-700 hover:text-blue-600 focus:outline-none transition">
+                          Law Courses <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg py-3 w-48">
+                            <a href="llb-course.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">LLB</a>
+                            <a href="llm-course.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">LLM</a>
+                            <a href="ba-llb-course.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">BA - LLB</a>
+                           
+                        </div>
+                    </div>
+
+                     <div class="relative group">
+                        <button class="text-gray-700 hover:text-blue-600 focus:outline-none transition">
+                          Universities <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg py-3 w-64">
+                            <a href="shubharti-university-detail.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">Shubharti University</a>
+                            <a href="suresh-gyan-vihar-university.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">Suresh Gyan Vihar University</a>
+                            <a href="maharaja-agrasen-himalyan-university.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">Maharaja Agrasen Himalayan Garhwal University</a>
+                            <a href="js-university-detail.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">JS University</a>
+                        </div>
+                    </div>
+
+                      <a href="/contact.html" class="text-gray-700 hover:text-blue-600 transition">Contact Us</a>
+                    <!-- More Dropdown -->
+                   
+                </div>
+
+                <!-- Contact Button -->
+                <!-- Original Button -->
+<button onclick="openModal()" class="hidden md:block bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">
+    Get Started
+</button>
+
+<!-- Popup Form -->
+<div id="modal" class="hidden fixed inset-0 z-50 overflow-y-auto">
+    <div class="fixed inset-0 bg-black/30 backdrop-blur-sm" onclick="closeModal()"></div>
+    
+    <div class="flex min-h-screen items-center mt-[1.5vw] justify-center p-4">
+        <div class="relative w-full max-w-md bg-white/90 backdrop-blur-lg rounded-2xl p-8 shadow-xl">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+                ✕
+            </button>
+            
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Get Started</h2>
+            
+            <form class="space-y-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-600 mb-1">Full Name</label>
+                    <input type="text" 
+                           class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium text-gray-600 mb-1">Email</label>
+                    <input type="email" 
+                           class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium text-gray-600 mb-1">Phone</label>
+                    <input type="tel" 
+                           class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                </div>
+
+                 <div>
+                    <label class="block text-sm font-medium text-gray-600 mb-1">Message</label>
+                    <textarea rows="3"
+                           class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+                           placeholder="Share your thoughts or questions..."
+                           ></textarea>
+                </div>
+                
+                <button type="submit" 
+                        class="w-full bg-blue-600 text-white py-2.5 rounded-lg hover:bg-blue-700 transition">
+                    Submit Application
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openModal() {
+        document.getElementById('modal').classList.remove('hidden');
+    }
+    
+    function closeModal() {
+        document.getElementById('modal').classList.add('hidden');
+    }
+</script>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t overflow-y-auto">
+            <div class="px-4 py-5 space-y-4">
+                <a href="/index.html" class="block text-gray-700 hover:text-blue-600">Home</a>
+                <a href="/about.html" class="block text-gray-700 hover:text-blue-600">About</a>
+                
+                <div class="relative">
+                    <button onclick="toggleDropdown('courses')" class="flex justify-between items-center w-full text-gray-700">
+                        Counselling Courses <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div id="courses-dropdown" class="hidden pl-4 mt-2 space-y-2">
+                        <a href="/crsu-bed-programme.html" class="block text-gray-700 hover:text-blue-600">CRSU B.Ed. Programme</a>
+                        <a href="/mdu-bed-programme.html" class="block text-gray-700 hover:text-blue-600">MDU B.Ed Programme</a>
+                       
+                    </div>
+                </div>
+                
+                <!-- Courses Accordion -->
+                <div class="relative">
+                    <button onclick="toggleDropdown('courses')" class="flex justify-between items-center w-full text-gray-700">
+                        Medical Courses <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div id="courses-dropdown" class="hidden pl-4 mt-2 space-y-2">
+                        <a href="/anm-course.html" class="block text-gray-700 hover:text-blue-600">ANM</a>
+                        <a href="/gnm-course.html" class="block text-gray-700 hover:text-blue-600">GNM</a>
+                        <a href="B.Pharma.html" class="block text-gray-700 hover:text-blue-600">B.Pharma</a>
+                        <a href="M.pharma.html" class="block text-gray-700 hover:text-blue-600">M.Pharma</a>
+                    </div>
+                </div>
+
+                 <div class="relative">
+                    <button onclick="toggleDropdown('courses')" class="flex justify-between items-center w-full text-gray-700">
+                        Law Courses <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div id="courses-dropdown" class="hidden pl-4 mt-2 space-y-2">
+                        <a href="/llb-course.html" class="block text-gray-700 hover:text-blue-600">LLB</a>
+                        <a href="/llm-course.html" class="block text-gray-700 hover:text-blue-600">LLM</a>
+                        <a href="/ba-llb-course.html" class="block text-gray-700 hover:text-blue-600">BA - LLB</a>
+         
+                    </div>
+                </div>
+                
+                <!-- More Accordion -->
+                <div class="relative">
+                    <button onclick="toggleDropdown('more')" class="flex justify-between items-center w-full text-gray-700">
+                        Universities <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div id="more-dropdown" class="hidden pl-4 mt-2 space-y-2">
+                        <a href="/shubharti-university-detail.html" class="block text-gray-700 hover:text-blue-600">Shubharti University</a>
+                        <a href="/suresh-gyan-vihar-university.html" class="block text-gray-700 hover:text-blue-600">Suresh Gyan Vihar University</a>
+                        <a href="/maharaja-agrasen-himalyan-university.html" class="block text-gray-700 hover:text-blue-600">Maharaja Agrasen Himalayan Garhwal University</a>
+                        <a href="/js-university-detail.html" class="block text-gray-700 hover:text-blue-600">JS University</a>
+                    </div>
+                </div>
+
+                <a href="/contact.html" class="w-full bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Mobile Dropdown Toggle
+        function toggleDropdown(type) {
+            const dropdown = document.getElementById(`${type}-dropdown`);
+            dropdown.classList.toggle('hidden');
+            
+            // Rotate chevron icon
+            const button = dropdown.previousElementSibling;
+            button.querySelector('i').classList.toggle('rotate-180');
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !mobileMenuButton.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^=""]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+   
+    
+
+<section class="relative mt-[100px] z-20"> <!-- Adjust mt based on your header height -->
+    <div class="hero-slider">
+        <!-- Slide 1 -->
+        <div class="relative h-[500px]">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#1a365d]/90 to-transparent"></div>
+            <div class="bg-[url('https://img.freepik.com/free-photo/free-time-students-bachelor-s-campus-life-rhythm-five-friendly-students-are-walking_8353-6408.jpg?ga=GA1.1.1966161202.1734948006&semt=ais_hybrid&w=740')] bg-cover bg-center h-full"></div>
+            <div class="absolute bottom-0 left-0 right-0 text-white px-4 py-16 lg:py-24 lg:px-8">
+                <div class="max-w-7xl mx-auto">
+                    <h2 class="text-4xl lg:text-6xl font-bold mb-4">Admissions Open 2025</h2>
+                    <p class="text-xl lg:text-2xl mb-8 max-w-2xl">Join India's Premier Education Network with 100+ Career-Oriented Programs</p>
+                    <button class="bg-[#2b6cb0] hover:bg-[#1e4a75] text-white px-8 py-3 rounded-full text-lg font-semibold transition-all">
+                        Apply Now <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="relative h-[500px]">
+            <div class="absolute inset-0 bg-gradient-to-l from-[#319795]/90 to-transparent"></div>
+            <div class="bg-[url('https://img.freepik.com/free-photo/low-rise-building_1127-3268.jpg?ga=GA1.1.1966161202.1734948006&semt=ais_hybrid&w=740')] bg-cover bg-center h-full"></div>
+            <div class="absolute bottom-0 left-0 right-0 text-white px-4 py-16 lg:py-24 lg:px-8">
+                <div class="max-w-7xl mx-auto text-right">
+                    <h2 class="text-4xl lg:text-6xl font-bold mb-4">Global University Partners</h2>
+                    <p class="text-xl lg:text-2xl mb-8 max-w-2xl ml-auto">Study Abroad Opportunities with 50+ International Universities</p>
+                    <button class="bg-[#319795] hover:bg-[#2a7a6d] text-white px-8 py-3 rounded-full text-lg font-semibold transition-all">
+                        Explore Programs <i class="fas fa-globe ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="relative h-[500px]">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#2c5282]/90 to-transparent"></div>
+            <div class="bg-[url('https://img.freepik.com/free-photo/building_1127-3357.jpg?ga=GA1.1.1966161202.1734948006&semt=ais_hybrid&w=740')] bg-cover bg-center h-full"></div>
+            <div class="absolute bottom-0 left-0 right-0 text-white px-4 py-16 lg:py-24 lg:px-8">
+                <div class="max-w-7xl mx-auto">
+                    <h2 class="text-4xl lg:text-6xl font-bold mb-4">Placement Assistance</h2>
+                    <p class="text-xl lg:text-2xl mb-8 max-w-2xl">94% Placement Record with Top Corporate Partners</p>
+                    <button class="bg-[#48bb78] hover:bg-[#38a169] text-white px-8 py-3 rounded-full text-lg font-semibold transition-all">
+                        View Placements <i class="fas fa-briefcase ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .hero-slider .slick-dots {
+        bottom: 40px;
+    }
+
+    .hero-slider .slick-dots li button:before {
+        font-size: 12px;
+        color: white;
+        opacity: 0.5;
+    }
+
+    .hero-slider .slick-dots li.slick-active button:before {
+        color: white;
+        opacity: 1;
+    }
+
+    .hero-slider .slick-arrow {
+        width: 50px;
+        height: 50px;
+        z-index: 10;
+    }
+
+    .hero-slider .slick-prev {
+        left: 25px;
+    }
+
+    .hero-slider .slick-next {
+        right: 25px;
+    }
+
+    .hero-slider .slick-prev:before,
+    .hero-slider .slick-next:before {
+        font-size: 40px;
+        opacity: 0.8;
+    }
+
+    .hero-slider .slick-prev:hover:before,
+    .hero-slider .slick-next:hover:before {
+        opacity: 1;
+    }
+</style>
+
+<!-- Add these scripts before closing body -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.hero-slider').slick({
+            dots: true,
+            arrows: false,
+            infinite: true,
+            speed: 1000,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            pauseOnHover: false,
+            cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        dots: true
+                    }
+                }
+            ]
+        });
+    });
+</script>
+
+<section class="py-16 bg-gradient-to-b from-[#f7fafc] to-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row gap-12 items-center">
+            <!-- Image Section -->
+            <div class="md:w-1/2 relative">
+                <div class="relative rounded-2xl overflow-hidden shadow-xl">
+                    <img src="https://img.freepik.com/free-photo/brainstorm-meeting_1098-15871.jpg?ga=GA1.1.1966161202.1734948006&semt=ais_hybrid&w=740" 
+                         alt="About Us" 
+                         class="w-full h-96 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#1a365d] via-transparent to-transparent"></div>
+                </div>
+                
+                <!-- Stats Cards -->
+                <div class="flex gap-4 mt-8 ml-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <h3 class="text-3xl font-bold text-[#2b6cb0]">15+</h3>
+                        <p class="text-sm text-gray-600">Years Experience</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <h3 class="text-3xl font-bold text-[#319795]">50K+</h3>
+                        <p class="text-sm text-gray-600">Students Enrolled</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Section -->
+            <div class="md:w-1/2">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#1a365d] mb-6">
+                    Transforming Education Through Innovation
+                </h2>
+                
+                <p class="text-lg text-gray-600 mb-8">
+                 Aadhyan Online Education is a dynamic and growth oriented institute, established by Aadhyan Online Education Trust, New Delhi in the year 2022 to impart graduate and post-graduate level educational programs to equip students for a meaningful career. These educational programs enable the students to compete in today’s demanding economy of an inter-connected world. Aadhyan Online Education has always maintained its commitment to provide overall growth of students through innovative teaching methodology and training them in Personality Development and Soft Skill programs.
+                </p>
+
+                <!-- Features Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-[#2b6cb0] p-3 rounded-lg">
+                            <i class="fas fa-chalkboard-teacher text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-[#1a365d]">Expert Faculty</h4>
+                            <p class="text-gray-600 text-sm">Industry veterans with 10+ years experience</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-[#319795] p-3 rounded-lg">
+                            <i class="fas fa-briefcase text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-[#1a365d]">Placement Support</h4>
+                            <p class="text-gray-600 text-sm">94% placement record across programs</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-[#48bb78] p-3 rounded-lg">
+                            <i class="fas fa-globe-asia text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-[#1a365d]">Global Reach</h4>
+                            <p class="text-gray-600 text-sm">Partnerships with 50+ international universities</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-[#2c5282] p-3 rounded-lg">
+                            <i class="fas fa-hand-holding-heart text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-[#1a365d]">Scholarships</h4>
+                            <p class="text-gray-600 text-sm">₹5Cr+ awarded in financial aid annually</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="bg-gradient-to-r from-[#2b6cb0] to-[#319795] hover:from-[#1e4a75] hover:to-[#2a7a6d] text-white px-8 py-3 rounded-full text-lg font-semibold transition-all">
+                    Explore Programs <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Accreditation Section -->
+        <div class="mt-16 pt-12 border-t border-gray-200">
+            <h3 class="text-center text-[#1a365d] font-semibold mb-8">Recognized & Accredited By</h3>
+            <div class="flex flex-wrap justify-center gap-8">
+                <img src="https://upload.wikimedia.org/wikipedia/en/e/eb/All_India_Council_for_Technical_Education_logo.png" 
+                     class="h-16 opacity-75 hover:opacity-100 transition" 
+                     alt="AICTE">
+                <img src="https://upload.wikimedia.org/wikipedia/en/4/4e/UGC_India_Logo.png" 
+                     class="h-16 opacity-75 hover:opacity-100 transition" 
+                     alt="UGC">
+                <img src="https://upload.wikimedia.org/wikipedia/en/1/1d/NAAC_LOGO.png" 
+                     class="h-16 opacity-75 hover:opacity-100 transition" 
+                     alt="NAAC">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#1a365d] mb-4">
+                Explore Our Programs
+            </h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Discover 100+ career-focused programs across diverse disciplines
+            </p>
+        </div>
+
+        <!-- Filters -->
+         <div class="flex flex-wrap gap-3 justify-center mb-8" id="filters">
+            <button class="px-4 py-2 rounded-full bg-[#2b6cb0] text-white filter-btn active" data-filter="all">All</button>
+            <button class="px-4 py-2 rounded-full border border-[#2b6cb0] text-[#2b6cb0] hover:bg-[#2b6cb0]/10 filter-btn" data-filter="undergraduate">Undergraduate</button>
+            <button class="px-4 py-2 rounded-full border border-[#319795] text-[#319795] hover:bg-[#319795]/10 filter-btn" data-filter="postgraduate">Postgraduate</button>
+            <button class="px-4 py-2 rounded-full border border-[#48bb78] text-[#48bb78] hover:bg-[#48bb78]/10 filter-btn" data-filter="diploma">Diploma</button>
+            <button class="px-4 py-2 rounded-full border border-[#2c5282] text-[#2c5282] hover:bg-[#2c5282]/10 filter-btn" data-filter="certification">Certification</button>
+        </div>
+
+        <!-- Course Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="course-grid">
+            <!-- Course Card 1 -->
+            <div class="course-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300" data-category="undergraduate">
+                <div class="relative">
+                    <img src="https://img.freepik.com/free-photo/cheerful-brunette-group-young-people-casual-clothes-working-modern-office_146671-16448.jpg?ga=GA1.1.1966161202.1734948006&semt=ais_hybrid&w=740" 
+                         alt="Medical Courses" 
+                         class="w-full h-48 object-cover rounded-t-xl">
+                    <span class="absolute top-4 right-4 bg-[#319795] text-white px-3 py-1 rounded-full text-sm">
+                        UGC Approved
+                    </span>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-sm text-[#2b6cb0] font-medium">Medical</span>
+                        <span class="text-sm text-gray-500">4 Years</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#1a365d] mb-2">B.Sc Nursing</h3>
+                    <p class="text-gray-600 mb-4">Comprehensive nursing program with modern healthcare practices</p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-rupee-sign text-gray-500"></i>
+                            <span class="font-medium">₹1.2L/Yr</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-user-graduate text-gray-500"></i>
+                            <span>120 Seats</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 bg-[#48bb78]/10 text-[#48bb78] text-sm rounded">NEET Required</span>
+                        <span class="px-2 py-1 bg-[#2b6cb0]/10 text-[#2b6cb0] text-sm rounded">Internship</span>
+                        <span class="px-2 py-1 bg-[#319795]/10 text-[#319795] text-sm rounded">Placement</span>
+                    </div>
+
+                    <button class="w-full bg-gradient-to-r from-[#2b6cb0] to-[#319795] hover:from-[#1e4a75] hover:to-[#2a7a6d] text-white px-4 py-2 rounded-lg transition-all">
+                        View Details <i class="fas fa-chevron-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Course Card 2 -->
+            <div class="course-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300" data-category="undergraduate">
+                <div class="relative">
+                    <img src="https://img.freepik.com/free-photo/group-young-people-doing-experiments-robotics-laboratory-girls-protective-glasses_1268-24389.jpg?ga=GA1.1.1966161202.1734948006&semt=ais_hybrid&w=740" 
+                         alt="Computer Courses" 
+                         class="w-full h-48 object-cover rounded-t-xl">
+                    <span class="absolute top-4 right-4 bg-[#2b6cb0] text-white px-3 py-1 rounded-full text-sm">
+                        NAAC A+
+                    </span>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-sm text-[#319795] font-medium">Engineering</span>
+                        <span class="text-sm text-gray-500">4 Years</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#1a365d] mb-2">B.Tech Computer Science</h3>
+                    <p class="text-gray-600 mb-4">Specializations in AI, Machine Learning & Cybersecurity</p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-rupee-sign text-gray-500"></i>
+                            <span class="font-medium">₹1.8L/Yr</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-user-graduate text-gray-500"></i>
+                            <span>240 Seats</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 bg-[#48bb78]/10 text-[#48bb78] text-sm rounded">JEE Main</span>
+                        <span class="px-2 py-1 bg-[#2b6cb0]/10 text-[#2b6cb0] text-sm rounded">Campus Placement</span>
+                        <span class="px-2 py-1 bg-[#319795]/10 text-[#319795] text-sm rounded">Industry Projects</span>
+                    </div>
+
+                    <button class="w-full bg-gradient-to-r from-[#2b6cb0] to-[#319795] hover:from-[#1e4a75] hover:to-[#2a7a6d] text-white px-4 py-2 rounded-lg transition-all">
+                        View Details <i class="fas fa-chevron-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Course Card 3 -->
+            <div class="course-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300" data-category="postgraduate">
+                <div class="relative">
+                    <img src="https://img.freepik.com/free-photo/group-four-south-asian-men-s-posed-business-meeting-cafe-indians-together-sign-important-documents-contract-study-work_627829-5252.jpg?ga=GA1.1.1966161202.1734948006&semt=ais_hybrid&w=740" 
+                         alt="Business Courses" 
+                         class="w-full h-48 object-cover rounded-t-xl">
+                    <span class="absolute top-4 right-4 bg-[#48bb78] text-white px-3 py-1 rounded-full text-sm">
+                        AICTE Approved
+                    </span>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-sm text-[#2c5282] font-medium">Management</span>
+                        <span class="text-sm text-gray-500">2 Years</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#1a365d] mb-2">MBA Program</h3>
+                    <p class="text-gray-600 mb-4">Specializations in Finance, Marketing & HR Management</p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-rupee-sign text-gray-500"></i>
+                            <span class="font-medium">₹2.5L/Yr</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-user-graduate text-gray-500"></i>
+                            <span>180 Seats</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 bg-[#48bb78]/10 text-[#48bb78] text-sm rounded">CAT/MAT</span>
+                        <span class="px-2 py-1 bg-[#2b6cb0]/10 text-[#2b6cb0] text-sm rounded">Summer Internship</span>
+                        <span class="px-2 py-1 bg-[#319795]/10 text-[#319795] text-sm rounded">Global Exposure</span>
+                    </div>
+
+                    <button class="w-full bg-gradient-to-r from-[#2b6cb0] to-[#319795] hover:from-[#1e4a75] hover:to-[#2a7a6d] text-white px-4 py-2 rounded-lg transition-all">
+                        View Details <i class="fas fa-chevron-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Course Card 4 -->
+
+              <div class="course-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300" data-category="diploma">
+                <div class="relative">
+                    <img src="https://img.freepik.com/free-photo/online-data_1098-16295.jpg?ga=GA1.1.1966161202.1734948006&semt=ais_hybrid&w=740" 
+                         alt="Business Courses" 
+                         class="w-full h-48 object-cover rounded-t-xl">
+                    <span class="absolute top-4 right-4 bg-[#48bb78] text-white px-3 py-1 rounded-full text-sm">
+                        AICTE Approved
+                    </span>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-sm text-[#2c5282] font-medium">Management</span>
+                        <span class="text-sm text-gray-500">2 Years</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#1a365d] mb-2">B.SC. Program</h3>
+                    <p class="text-gray-600 mb-4">Specializations in Finance, Marketing & HR Management</p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-rupee-sign text-gray-500"></i>
+                            <span class="font-medium">₹2.5L/Yr</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-user-graduate text-gray-500"></i>
+                            <span>180 Seats</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 bg-[#48bb78]/10 text-[#48bb78] text-sm rounded">CAT/MAT</span>
+                        <span class="px-2 py-1 bg-[#2b6cb0]/10 text-[#2b6cb0] text-sm rounded">Summer Internship</span>
+                        <span class="px-2 py-1 bg-[#319795]/10 text-[#319795] text-sm rounded">Global Exposure</span>
+                    </div>
+
+                    <button class="w-full bg-gradient-to-r from-[#2b6cb0] to-[#319795] hover:from-[#1e4a75] hover:to-[#2a7a6d] text-white px-4 py-2 rounded-lg transition-all">
+                        View Details <i class="fas fa-chevron-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Course Card 5 -->
+
+             <div class="course-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300" data-category="diploma">
+                <div class="relative">
+                    <img src="https://img.freepik.com/free-photo/young-student-wearing-graduation-cape-looking-her-notebook_114579-92485.jpg?ga=GA1.1.1966161202.1734948006&semt=ais_hybrid&w=740" 
+                         alt="Computer Courses" 
+                         class="w-full h-48 object-cover rounded-t-xl">
+                    <span class="absolute top-4 right-4 bg-[#2b6cb0] text-white px-3 py-1 rounded-full text-sm">
+                        NAAC A+
+                    </span>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-sm text-[#319795] font-medium">Engineering</span>
+                        <span class="text-sm text-gray-500">4 Years</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#1a365d] mb-2">Ph.D. Course</h3>
+                    <p class="text-gray-600 mb-4">Specializations in AI, Machine Learning & Cybersecurity</p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-rupee-sign text-gray-500"></i>
+                            <span class="font-medium">₹1.8L/Yr</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-user-graduate text-gray-500"></i>
+                            <span>240 Seats</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 bg-[#48bb78]/10 text-[#48bb78] text-sm rounded">JEE Main</span>
+                        <span class="px-2 py-1 bg-[#2b6cb0]/10 text-[#2b6cb0] text-sm rounded">Campus Placement</span>
+                        <span class="px-2 py-1 bg-[#319795]/10 text-[#319795] text-sm rounded">Industry Projects</span>
+                    </div>
+
+                    <button class="w-full bg-gradient-to-r from-[#2b6cb0] to-[#319795] hover:from-[#1e4a75] hover:to-[#2a7a6d] text-white px-4 py-2 rounded-lg transition-all">
+                        View Details <i class="fas fa-chevron-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Course Card 6 -->
+      <div class="course-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300" data-category="certification">
+                <div class="relative">
+                    <img src="https://img.freepik.com/free-photo/cheerful-brunette-group-young-people-casual-clothes-working-modern-office_146671-16448.jpg?ga=GA1.1.1966161202.1734948006&semt=ais_hybrid&w=740" 
+                         alt="Medical Courses" 
+                         class="w-full h-48 object-cover rounded-t-xl">
+                    <span class="absolute top-4 right-4 bg-[#319795] text-white px-3 py-1 rounded-full text-sm">
+                        UGC Approved
+                    </span>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-sm text-[#2b6cb0] font-medium">Medical</span>
+                        <span class="text-sm text-gray-500">4 Years</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#1a365d] mb-2">B.Sc Nursing</h3>
+                    <p class="text-gray-600 mb-4">Comprehensive nursing program with modern healthcare practices</p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-rupee-sign text-gray-500"></i>
+                            <span class="font-medium">₹1.2L/Yr</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-user-graduate text-gray-500"></i>
+                            <span>120 Seats</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 bg-[#48bb78]/10 text-[#48bb78] text-sm rounded">NEET Required</span>
+                        <span class="px-2 py-1 bg-[#2b6cb0]/10 text-[#2b6cb0] text-sm rounded">Internship</span>
+                        <span class="px-2 py-1 bg-[#319795]/10 text-[#319795] text-sm rounded">Placement</span>
+                    </div>
+
+                    <button class="w-full bg-gradient-to-r from-[#2b6cb0] to-[#319795] hover:from-[#1e4a75] hover:to-[#2a7a6d] text-white px-4 py-2 rounded-lg transition-all">
+                        View Details <i class="fas fa-chevron-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Pagination -->
+      
+    </div>
+</section>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const courseCards = document.querySelectorAll('.course-card');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active', 'text-white', 'bg-[#2b6cb0]'));
+            
+            // Add active class to clicked button
+            const filter = button.dataset.filter;
+            button.classList.add('active');
+            if(filter !== 'all') {
+                button.classList.add('text-white', 'bg-[#2b6cb0]');
+            }
+
+            // Filter courses
+            courseCards.forEach(card => {
+                const category = card.dataset.category;
+                if(filter === 'all' || category === filter) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        });
+    });
+});
+</script>
+
+<style>
+.filter-btn.active {
+    background-color: #2b6cb0 !important;
+    color: white !important;
+}
+</style>
+
+
+<section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Left: Search Program -->
+            <div class="lg:w-1/2 bg-white rounded-2xl shadow-lg p-8">
+                <h3 class="text-2xl font-bold text-[#1a365d] mb-6">Find Your Program</h3>
+                
+                <form class="space-y-6">
+                    <div>
+                        <label class="block text-gray-700 mb-2">Select Course</label>
+                        <select class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#2b6cb0] focus:ring-2 focus:ring-[#2b6cb0]/50">
+                            <option>Select Course</option>
+                            <option>B.Tech Computer Science</option>
+                            <option>MBA</option>
+                            <option>B.Sc Nursing</option>
+                            <option>BBA</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 mb-2">Select University</label>
+                        <select class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#319795] focus:ring-2 focus:ring-[#319795]/50">
+                            <option>Select University</option>
+                            <option>State Technical University</option>
+                            <option>National Business School</option>
+                            <option>Global Medical College</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 mb-2">Location</label>
+                        <input type="text" 
+                               class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#48bb78] focus:ring-2 focus:ring-[#48bb78]/50" 
+                               placeholder="Enter preferred location">
+                    </div>
+
+                    <button class="w-full bg-gradient-to-r from-[#2b6cb0] to-[#319795] hover:from-[#1e4a75] hover:to-[#2a7a6d] text-white px-6 py-3 rounded-lg font-semibold transition-all">
+                        Search Programs <i class="fas fa-search ml-2"></i>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Right: Latest Updates -->
+             
+            <!-- Right: Latest Updates -->
+<!-- Right: Latest Updates -->
+<div class="lg:w-1/2 bg-[#1a365d] rounded-2xl shadow-lg p-8 text-white">
+    <h3 class="text-2xl font-bold mb-6 border-b border-white/20 pb-4">Latest Announcements</h3>
+    
+    <div class="overflow-hidden h-[450px] relative">
+        <div class="vertical-marquee space-y-4">
+            <!-- Update Items -->
+            <div class="flex items-start gap-4 p-4 hover:bg-white/5 rounded-xl transition-colors">
+                <div class="mt-1.5 w-2 h-2 bg-[#48bb78] rounded-full"></div>
+                <div>
+                    <span class="text-sm text-[#48bb78] font-medium">15 June 2024</span>
+                    <p class="mt-2">Admission deadline extended for B.Tech programs till 30 June</p>
+                </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 hover:bg-white/5 rounded-xl transition-colors">
+                <div class="mt-1.5 w-2 h-2 bg-[#48bb78] rounded-full"></div>
+                <div>
+                    <span class="text-sm text-[#48bb78] font-medium">14 June 2024</span>
+                    <p class="mt-2">New partnership announced with 5 European universities</p>
+                </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 hover:bg-white/5 rounded-xl transition-colors">
+                <div class="mt-1.5 w-2 h-2 bg-[#48bb78] rounded-full"></div>
+                <div>
+                    <span class="text-sm text-[#48bb78] font-medium">13 June 2024</span>
+                    <p class="mt-2">Aadhyan Online Education ranked #1 in education services by NIRF</p>
+                </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 hover:bg-white/5 rounded-xl transition-colors">
+                <div class="mt-1.5 w-2 h-2 bg-[#48bb78] rounded-full"></div>
+                <div>
+                    <span class="text-sm text-[#48bb78] font-medium">12 June 2024</span>
+                    <p class="mt-2">New scholarship program launched for merit students</p>
+                </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 hover:bg-white/5 rounded-xl transition-colors">
+                <div class="mt-1.5 w-2 h-2 bg-[#48bb78] rounded-full"></div>
+                <div>
+                    <span class="text-sm text-[#48bb78] font-medium">11 June 2024</span>
+                    <p class="mt-2">Campus placement drive scheduled for 25 June</p>
+                </div>
+            </div>
+
+            <!-- Duplicated items for seamless loop -->
+            <div class="flex items-start gap-4 p-4 hover:bg-white/5 rounded-xl transition-colors">
+                <div class="mt-1.5 w-2 h-2 bg-[#48bb78] rounded-full"></div>
+                <div>
+                    <span class="text-sm text-[#48bb78] font-medium">15 June 2024</span>
+                    <p class="mt-2">Admission deadline extended for B.Tech programs till 30 June</p>
+                </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 hover:bg-white/5 rounded-xl transition-colors">
+                <div class="mt-1.5 w-2 h-2 bg-[#48bb78] rounded-full"></div>
+                <div>
+                    <span class="text-sm text-[#48bb78] font-medium">14 June 2024</span>
+                    <p class="mt-2">New partnership announced with 5 European universities</p>
+                </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 hover:bg-white/5 rounded-xl transition-colors">
+                <div class="mt-1.5 w-2 h-2 bg-[#48bb78] rounded-full"></div>
+                <div>
+                    <span class="text-sm text-[#48bb78] font-medium">13 June 2024</span>
+                    <p class="mt-2">Aadhyan Online Education ranked #1 in education services by NIRF</p>
+                </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 hover:bg-white/5 rounded-xl transition-colors">
+                <div class="mt-1.5 w-2 h-2 bg-[#48bb78] rounded-full"></div>
+                <div>
+                    <span class="text-sm text-[#48bb78] font-medium">12 June 2024</span>
+                    <p class="mt-2">New scholarship program launched for merit students</p>
+                </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 hover:bg-white/5 rounded-xl transition-colors">
+                <div class="mt-1.5 w-2 h-2 bg-[#48bb78] rounded-full"></div>
+                <div>
+                    <span class="text-sm text-[#48bb78] font-medium">11 June 2024</span>
+                    <p class="mt-2">Campus placement drive scheduled for 25 June</p>
+                </div>
+            </div>
+        </div>
+    </div>
+     </div>
+    </section>
+<style>
+    @keyframes verticalSlide {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-50%); }
+    }
+
+    .vertical-marquee {
+        animation: verticalSlide 40s linear infinite;
+    }
+
+    .vertical-marquee:hover {
+        animation-play-state: paused;
+    }
+
+    .vertical-marquee > div {
+        min-height: 80px;
+    }
+</style>
+
+<script>
+    // Pause animation for reduced motion
+    const marquee = document.querySelector('.vertical-marquee');
+    const prefersReducedMotionVertical = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    if (prefersReducedMotionVertical.matches) {
+        marquee.style.animation = 'none';
+    }
+</script>
+
+
+<section class="py-16 bg-gradient-to-b from-white to-[#f7fafc]">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex flex-col lg:flex-row gap-12 items-center">
+            <!-- Image Section -->
+            <div class="lg:w-1/2 relative">
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1584697964358-3e14ca57658b" 
+                         alt="Campus Learning" 
+                         class="w-full h-[600px] object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#1a365d] via-transparent to-transparent"></div>
+                </div>
+                
+                <!-- Interactive Stats -->
+                <div class="absolute bottom-8 left-8 right-8 flex flex-wrap gap-4">
+                    <div class="bg-white p-6 rounded-xl shadow-lg flex-1 min-w-[200px]">
+                        <h3 class="text-3xl font-bold text-[#2b6cb0] mb-2">95%</h3>
+                        <p class="text-sm text-gray-600">Placement Success Rate</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg flex-1 min-w-[200px]">
+                        <h3 class="text-3xl font-bold text-[#319795] mb-2">150+</h3>
+                        <p class="text-sm text-gray-600">Industry Partnerships</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Section -->
+            <div class="lg:w-1/2">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#1a365d] mb-6">
+                    Why Choose Aadhyan Online Education?
+                </h2>
+                
+                <div class="space-y-8">
+                    <!-- Feature 1 -->
+                    <div class="flex gap-6 group">
+                        <div class="bg-[#2b6cb0] p-4 rounded-xl w-14 h-14 flex items-center justify-center flex-shrink-0">
+                            <img src="https://img.icons8.com/fluency/96/ffffff/classroom.png" 
+                                 alt="Infrastructure" 
+                                 class="w-8 h-8">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-[#1a365d] mb-3">World-Class Infrastructure</h3>
+                            <p class="text-gray-600">
+                                Experience learning in smart classrooms with cutting-edge technology, 
+                                advanced labs, and extensive digital resources.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="flex gap-6 group">
+                        <div class="bg-[#319795] p-4 rounded-xl w-14 h-14 flex items-center justify-center flex-shrink-0">
+                            <img src="https://img.icons8.com/color/96/ffffff/group-of-projects.png" 
+                                 alt="Industry Connect" 
+                                 class="w-8 h-8">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-[#1a365d] mb-3">Industry-Aligned Curriculum</h3>
+                            <p class="text-gray-600">
+                                Programs designed with industry leaders, featuring live projects, 
+                                internships, and guest lectures from top professionals.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="flex gap-6 group">
+                        <div class="bg-[#48bb78] p-4 rounded-xl w-14 h-14 flex items-center justify-center flex-shrink-0">
+                            <img src="https://img.icons8.com/fluency/96/ffffff/conference-call.png" 
+                                 alt="Faculty" 
+                                 class="w-8 h-8">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-[#1a365d] mb-3">Expert Faculty</h3>
+                            <p class="text-gray-600">
+                                Learn from PhD holders and industry veterans with an average 
+                                12+ years of teaching and professional experience.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="flex gap-6 group">
+                        <div class="bg-[#2c5282] p-4 rounded-xl w-14 h-14 flex items-center justify-center flex-shrink-0">
+                            <img src="https://img.icons8.com/color/96/ffffff/earth-planet.png" 
+                                 alt="Global" 
+                                 class="w-8 h-8">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-[#1a365d] mb-3">Global Opportunities</h3>
+                            <p class="text-gray-600">
+                                International exchange programs with 50+ partner universities 
+                                and placement assistance for overseas careers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Benefits -->
+                <div class="mt-8 grid grid-cols-2 gap-4">
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-5 h-5 text-[#319795]" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-gray-600">NAAC A++ Accredited</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-5 h-5 text-[#319795]" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-gray-600">Scholarships Available</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-5 h-5 text-[#319795]" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-gray-600">24/7 Learning Support</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-5 h-5 text-[#319795]" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-gray-600">AI-Powered Career Guidance</span>
+                    </div>
+                </div>
+
+                <button class="mt-12 bg-gradient-to-r from-[#2b6cb0] to-[#319795] hover:from-[#1e4a75] hover:to-[#2a7a6d] text-white px-8 py-3 rounded-full text-lg font-semibold transition-all">
+                    Explore Advantages <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Accreditation Logos -->
+        <!-- <div class="mt-16 pt-12 border-t border-gray-200">
+            <h3 class="text-center text-[#1a365d] font-semibold mb-8">Recognized By Leading Organizations</h3>
+            <div class="flex flex-wrap justify-center gap-12 opacity-75">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/NASA_logo.svg" 
+                     class="h-12" alt="NASA Collaboration">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Google_Plus_logo_2015.svg" 
+                     class="h-12" alt="Google Partner">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Microsoft_Teams_logo_%282019%29.svg" 
+                     class="h-12" alt="Microsoft Partner">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" 
+                     class="h-12" alt="Google for Education">
+            </div>
+        </div> -->
+    </div>
+</section>
+
+
+<section class="py-16 bg-[#f8fafc]">
+    <div class="max-w-7xl mx-auto px-4">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#1a365d] mb-4">
+                What Our Students Say
+            </h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Hear from thousands of successful alumni across the globe
+            </p>
+        </div>
+
+        <!-- Testimonial Slider -->
+        <div class="testimonial-slider">
+            <!-- Testimonial 1 -->
+            <div class="px-3">
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <div class="flex items-center mb-6">
+                        <img src="https://img.freepik.com/free-photo/front-view-male-student-green-checkered-shirt-wearing-black-backpack-holding-files-blue-wall_140725-42404.jpg?ga=GA1.1.1966161202.1734948006&semt=ais_hybrid&w=740" 
+                             class="w-16 h-16 rounded-full object-cover"
+                             alt="Student">
+                        <div class="ml-4">
+                            <h4 class="font-bold text-[#1a365d]">Rahul Sharma</h4>
+                            <p class="text-sm text-gray-600">B.Tech Computer Science</p>
+                            <div class="flex mt-1 text-[#ffc107]">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 relative pl-8">
+                        <i class="fas fa-quote-left text-[#2b6cb0] text-2xl absolute left-0 top-0"></i>
+                        Aadhyan Online Education's guidance helped me secure admission in my dream college. The counselors 
+                        were always available and provided end-to-end support throughout the process.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="px-3">
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <div class="flex items-center mb-6">
+                        <img src="https://img.freepik.com/free-photo/smiling-young-caucasian-woman-holds-pen-notebook_141793-115584.jpg?ga=GA1.1.1966161202.1734948006&semt=ais_hybrid&w=740" 
+                             class="w-16 h-16 rounded-full object-cover"
+                             alt="Student">
+                        <div class="ml-4">
+                            <h4 class="font-bold text-[#1a365d]">Priya Patel</h4>
+                            <p class="text-sm text-gray-600">MBA Marketing</p>
+                            <div class="flex mt-1 text-[#ffc107]">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 relative pl-8">
+                        <i class="fas fa-quote-left text-[#2b6cb0] text-2xl absolute left-0 top-0"></i>
+                        The scholarship assistance program helped me reduce my educational expenses 
+                        significantly. Truly grateful for their transparent process and expert advice.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="px-3">
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <div class="flex items-center mb-6">
+                        <img src="https://img.freepik.com/free-photo/summer-lifestyle-fashion-portrait-young-stylish-hipster-woman-walking-street_1153-8615.jpg?ga=GA1.1.1966161202.1734948006&semt=ais_hybrid&w=740" 
+                             class="w-16 h-16 rounded-full object-cover"
+                             alt="Student">
+                        <div class="ml-4">
+                            <h4 class="font-bold text-[#1a365d]">Anjali Mehta</h4>
+                            <p class="text-sm text-gray-600">B.Sc Nursing</p>
+                            <div class="flex mt-1 text-[#ffc107]">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 relative pl-8">
+                        <i class="fas fa-quote-left text-[#2b6cb0] text-2xl absolute left-0 top-0"></i>
+                        From admission to placement support, Aadhyan Online Education provided excellent services. 
+                        Their study materials were particularly helpful during exam preparation.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Add more testimonials as needed -->
+        </div>
+    </div>
+</section>
+
+<script>
+    $(document).ready(function(){
+        $('.testimonial-slider').slick({
+            dots: true,
+            arrows: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    });
+</script>
+
+<style>
+    .testimonial-slider .slick-prev:before,
+    .testimonial-slider .slick-next:before {
+        color: #1a365d;
+        font-size: 30px;
+    }
+
+    .testimonial-slider .slick-dots li button:before {
+        font-size: 12px;
+        color: #2b6cb0;
+    }
+
+    .testimonial-slider .slick-dots li.slick-active button:before {
+        color: #2b6cb0;
+    }
+
+    .testimonial-slider .slick-arrow {
+        width: 40px;
+        height: 40px;
+    }
+
+    .testimonial-slider .slick-prev {
+        left: -50px;
+    }
+
+    .testimonial-slider .slick-next {
+        right: -50px;
+    }
+
+    @media (max-width: 640px) {
+        .testimonial-slider .slick-prev {
+            left: -30px;
+        }
+        .testimonial-slider .slick-next {
+            right: -30px;
+        }
+    }
+</style>
+
+<section class="py-16 bg-gradient-to-b from-[#f8fafc] to-white relative overflow-hidden">
+    <!-- Decorative Elements -->
+    <div class="absolute inset-0 opacity-5 z-0">
+        <div class="absolute -top-20 -left-20 w-96 h-96 bg-[#319795] rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+        <div class="absolute -bottom-20 -right-20 w-96 h-96 bg-[#2b6cb0] rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#1a365d] mb-4">
+                Get in Touch
+            </h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Have questions or need assistance? Our team is here to help you 24/7
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- Contact Information -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+                <div class="space-y-8">
+                    <!-- Contact Card 1 -->
+                    <div class="flex items-start gap-6">
+                        <div class="bg-[#2b6cb0]/10 p-4 rounded-xl flex-shrink-0">
+                            <img src="https://img.icons8.com/ios-filled/100/2b6cb0/phone.png" 
+                                 alt="Phone" 
+                                 class="w-8 h-8">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-[#1a365d] mb-2">Call Us</h3>
+                            <p class="text-gray-600 mb-2">Speak directly with our support team</p>
+                            <a href="tel:+911234567890" class="text-[#2b6cb0] font-medium hover:underline">
+                                7011189760, 9625650882
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Card 2 -->
+                    <div class="flex items-start gap-6">
+                        <div class="bg-[#319795]/10 p-4 rounded-xl flex-shrink-0">
+                            <img src="https://img.icons8.com/ios-filled/100/319795/email.png" 
+                                 alt="Email" 
+                                 class="w-8 h-8">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-[#1a365d] mb-2">Email Us</h3>
+                            <p class="text-gray-600 mb-2">Get quick responses within 24 hours</p>
+                            <a href="mailto:support@Aadhyan Online Education.com" class="text-[#319795] font-medium hover:underline">
+                                info@aadhyanonlineeducation.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Card 3 -->
+                    <div class="flex items-start gap-6">
+                        <div class="bg-[#48bb78]/10 p-4 rounded-xl flex-shrink-0">
+                            <img src="https://img.icons8.com/ios-filled/100/48bb78/address.png" 
+                                 alt="Address" 
+                                 class="w-8 h-8">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-[#1a365d] mb-2">Visit Us</h3>
+                            <p class="text-gray-600 mb-2">Schedule an office visit</p>
+                            <p class="text-gray-600">A-372, Gali Number-11, Mahaveer Enclave Part-2 2,<br>
+                            Near Dabri,Uttam Nagar,<br>
+                            New Delhi-110059</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="pt-8 border-t border-gray-200">
+                        <h4 class="text-lg font-semibold text-[#1a365d] mb-4">Connect Socially</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="p-2 bg-[#2b6cb0]/10 text-[#2b6cb0] rounded-lg hover:bg-[#2b6cb0]/20">
+                                <i class="fab fa-facebook-f text-lg"></i>
+                            </a>
+                            <a href="#" class="p-2 bg-[#319795]/10 text-[#319795] rounded-lg hover:bg-[#319795]/20">
+                                <i class="fab fa-twitter text-lg"></i>
+                            </a>
+                            <a href="#" class="p-2 bg-[#48bb78]/10 text-[#48bb78] rounded-lg hover:bg-[#48bb78]/20">
+                                <i class="fab fa-linkedin-in text-lg"></i>
+                            </a>
+                            <a href="#" class="p-2 bg-[#2c5282]/10 text-[#2c5282] rounded-lg hover:bg-[#2c5282]/20">
+                                <i class="fab fa-instagram text-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+                <form class="space-y-6">
+                    <div>
+                        <label class="block text-gray-700 mb-2">Full Name</label>
+                        <input type="text" 
+                               class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#2b6cb0] focus:ring-2 focus:ring-[#2b6cb0]/50"
+                               placeholder="Enter your name">
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 mb-2">Email Address</label>
+                        <input type="email" 
+                               class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#319795] focus:ring-2 focus:ring-[#319795]/50"
+                               placeholder="name@example.com">
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 mb-2">Phone Number</label>
+                        <input type="tel" 
+                               class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#48bb78] focus:ring-2 focus:ring-[#48bb78]/50"
+                               placeholder="+91 98765 43210">
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 mb-2">Message</label>
+                        <textarea 
+                            class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#2c5282] focus:ring-2 focus:ring-[#2c5282]/50"
+                            rows="4"
+                            placeholder="Write your message here..."></textarea>
+                    </div>
+
+                    <button class="w-full bg-gradient-to-r from-[#2b6cb0] to-[#319795] hover:from-[#1e4a75] hover:to-[#2a7a6d] text-white px-6 py-3 rounded-lg font-semibold transition-all">
+                        Send Message <i class="fas fa-paper-plane ml-2"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Map -->
+      
+    </div>
+</section>
+<footer class="bg-gradient-to-b from-[#1a365d] to-[#0d243f] text-gray-300">
+    <div class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <!-- Company Info -->
+            <div class="space-y-4">
+                <img src="https://i.postimg.cc/mr1F3N5B/logo.png" alt="Aadhyan Online Education" class="h-[20vw] md:h-[18vh] w-auto mb-4">
+                <p class="text-sm leading-relaxed">
+                    Empowering learners through innovative education solutions since 2010.
+                </p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="text-white hover:text-[#48bb78] transition-colors">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-[#48bb78] transition-colors">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-[#48bb78] transition-colors">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-[#48bb78] transition-colors">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="space-y-3">
+                <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="/index.html" class="hover:text-[#48bb78] transition-colors">Home</a></li>
+                    <li><a href="/about.html" class="hover:text-[#48bb78] transition-colors">About</a></li>
+                    <li><a href="/blog.html" class="hover:text-[#48bb78] transition-colors">Blog</a></li>
+                    <li><a href="/faq.html" class="hover:text-[#48bb78] transition-colors">FAQs</a></li>
+                    <li><a href="/contact.html" class="hover:text-[#48bb78] transition-colors">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Programs -->
+            <div class="space-y-3">
+                <h4 class="text-white font-semibold mb-4">Programs</h4>
+                <ul class="space-y-2">
+                    <li><a href="/anm-course.html" class="hover:text-[#48bb78] transition-colors">ANM</a></li>
+                    <li><a href="/gnm-course.html" class="hover:text-[#48bb78] transition-colors">GNM</a></li>
+                    <li><a href="/B.Pharma.html" class="hover:text-[#48bb78] transition-colors">B. Pharma</a></li>
+                    <li><a href="/M.pharma.html" class="hover:text-[#48bb78] transition-colors">M. Pharma</a></li>
+                    <li><a href="/ba-llb-course.html" class="hover:text-[#48bb78] transition-colors">BA - LLB</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="space-y-4">
+                <h4 class="text-white font-semibold mb-4">Stay Updated</h4>
+                <form class="flex flex-col space-y-3">
+                    <input type="email" 
+                           placeholder="Enter your email" 
+                           class="px-4 py-2 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:border-[#48bb78]">
+                    <button class="bg-[#48bb78] hover:bg-[#38a169] text-white px-4 py-2 rounded-lg transition-colors">
+                        Subscribe
+                    </button>
+                </form>
+                <div class="pt-4 border-t border-white/10">
+                    <p class="text-sm mt-2">
+                        <i class="fas fa-phone-alt mr-2"></i>
+                        <a href="tel:+917011189760" class="hover:text-[#48bb78]">7011189760, 9625650882</a>
+                    </p>
+                    <p class="text-sm mt-2">
+                        <i class="fas fa-envelope mr-2"></i>
+                        <a href="mailto:info@aadhyanonlineeducation.com" class="hover:text-[#48bb78]">info@aadhyanonlineeducation.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-white/10 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <p class="text-sm text-white/70">
+                    © 2025 Aadhyan Online Education. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-sm hover:text-[#48bb78] transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-sm hover:text-[#48bb78] transition-colors">Terms of Service</a>
+                    <a href="#" class="text-sm hover:text-[#48bb78] transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
